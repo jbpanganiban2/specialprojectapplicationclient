@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+body {
+	/* // sans serif */
+	font-family: 'Montserrat', sans-serif;
+	background-color: #dce9ef;
+}
+
+#sidenav-overlay {
+	z-index: 1;
+}
+
+.little-box {
+	display: inline-block;
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
+
+.pad-bot {
+	padding-top: 25px;
+ 	padding-bottom: 25px;
+}
+
+.import-csv {
+	margin-bottom: 15px;
+}
+
+div.file-field.btn.blue.waves-effect.waves-light > label {
+	font-size: 1rem;
+	color: white !important;
+}
+
+.course-action {
+	display: inline-block;
+}
+
+li.collapsible-none > div.collapsible-header {
+	font-size: 1.14rem;
+}
+
+li.collapsible-red > div.collapsible-header {
+	color: #D32F2F !important;
+	font-size: 1.14rem;
+}
+
+li.collapsible-yellow > div.collapsible-header {
+	color: #fbc02d !important;
+	font-size: 1.14rem;
+}
+
+li.collapsible-green > div.collapsible-header {
+	color: #388E3C !important;
+	font-size: 1.14rem;
+}waves-effect wave
+
+li > div.collapsible-header > i {
+	color: black !important;
+}
+
+.clickable {
+	cursor: pointer;
+}
+
+.table-red {
+	color: #D32F2F !important;
+}
+
+.table-yellow {
+	color: #fbc02d !important;
+}
+
+.table-green {
+	color: #388E3C !important;
+}

@@ -1,0 +1,19 @@
+img{
+    margin-left: 10px;
+}
+
+.nav {
+    border-bottom:  red;
+}
+.nav-wrapper {
+
+ 	margin: 0;
+ 	background-repeat: no-repeat;
+ 	background-attachment: fixed;
+	background: linear-gradient(45deg, #263238 0%, #2979FF 150%);
+	box-shadow: 0 6px 20px 0 rgba(41, 121, 255, 0.5);
+}
+
+.lighter {
+	background-color: rgba(41, 121, 255, 0.4);
+}

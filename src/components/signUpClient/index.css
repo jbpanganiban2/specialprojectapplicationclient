@@ -1,0 +1,84 @@
+.background {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background: #0288d1;
+  background: -webkit-linear-gradient(45deg, #0288d1 0%, #26c6da 100%);
+  background: linear-gradient(45deg, #0288d1 0%, #26c6da 100%);
+}
+
+.body-wrapper {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.valign-wrapper {
+  width: 100%;
+}
+
+.cardPanel{
+  box-shadow: 0 6px 20px 0 rgba(38, 198, 218, 0.5);
+}
+
+.image {
+  width: auto;
+  max-height: 10%;
+  height: 15vh;
+}
+
+.btn-new {
+  border-radius: 4px;
+  width: 100%;
+  background: linear-gradient(45deg, #0288d1 0%, #26c6da 100%);
+  box-shadow: 0 6px 20px 0 rgba(38, 198, 218, 0.5);
+}
+
+.btn-new:hover {
+  box-shadow: none;
+}
+
+.btn-client {
+  border-radius: 4px;
+  width: 50%;
+  background: linear-gradient(45deg, #0288d1 0%, #26c6da 100%);
+  box-shadow: 0 6px 20px 0 rgba(38, 198, 218, 0.5);
+}
+
+.btn-worker {
+  border-radius: 4px;
+  width: 50%;
+  background: linear-gradient(45deg, #0288d1 0%, #26c6da 100%);
+  box-shadow: 0 6px 20px 0 rgba(38, 198, 218, 0.5);
+}
+
+.marginize {
+  margin-top: 10px;
+}
+
+.fix-margin {
+  margin-right: -20px !important;
+}
+
+.fix-client {
+  margin-right: -20px !important;
+}
+
+.fix-worker {
+  margin-right: -20px !important;
+}
+
+.input-field input[type=text]:focus + label {
+  color: #26c6da;
+}
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #26c6da;
+  box-shadow: 0 1px 0 0 #26c6da;
+}
+.input-field .prefix.active {
+  color: #26c6da;
+}

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.post-thumb {
+    float: left
+}
+.post-thumb img {
+    display: block
+}
+.post-content {
+    margin-left: 210px
+}
+
+
+/*====================================================================*/
+
+.all {
+    box-sizing: border-box;
+}
+
+.thebody {
+    background-color: #263238;
+    font-family: Montserrat, sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 80vh;
+    margin: 0;
+}
+
+h5 {
+    margin: 10px 0;
+}
+
+h6 {
+    margin: 5px 0;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+
+
+
+
+.card-container {
+    background-color: #231e39;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+    color: #b3b8cd;
+    padding-top: 30px;
+    position: relative;
+    width: 450px;
+    max-width: 100%;
+    text-align: center;
+}
+
+
+
+.card-container .round {
+    border: 1px solid #03bfcb;
+    border-radius: 50%;
+    padding: 7px;
+}
+
+
+
+
+button.primary {
+    background-color: #03bfcb;
+    border: 1px solid #03bfcb;
+    border-radius: 3px;
+    color: #231e39;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+button.primary.ghost {
+    background-color: transparent;
+    color: #02899c;
+}
+
+
+
+.skills {
+    background-color: #1f1a36;
+    text-align: left;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.skills ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skills ul li {
+    border: 1px solid #2d2747;
+    border-radius: 2px;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 7px 7px 0;
+    padding: 7px;
+}
+
+.category {
+    text-align: center;
+}
+
+
+.sjobtn-new {
+  border-radius: 4px;
+  width: 80%;
+  background: linear-gradient(45deg, #0288d1 0%, #26c6da 100%);
+  left: 70px;
+  /*box-shadow: 0 6px 20px 0 linear-gradient(45deg, #0288d1 0%, #26c6da 100%);*/
+}
+
+.sjobtn-new:hover {
+  box-shadow: 0 6px 20px 0 linear-gradient(45deg, #0288d1 0%, #26c6da 100%);
+  background: linear-gradient(45deg, #0288d1 0%, #26c6da 100%);
+}
+/*linear-gradient(45deg, #0288d1 0%, #26c6da 100%)*/
