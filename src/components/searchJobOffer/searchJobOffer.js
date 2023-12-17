@@ -267,7 +267,7 @@ class SearchJobOffer extends Component {
 
 
   componentDidMount(){
-    const chatClient = new StreamChat("2q5sjjwwhm5j");
+    const chatClient = new StreamChat("c9mjnrm3srny");
     // const userToken = chatClient.createToken(this.props.user.username);
 
     chatClient.setUser(

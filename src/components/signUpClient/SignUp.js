@@ -250,6 +250,7 @@ class SignUp extends Component {
 					// status: this.state.status,
 				})
 			   .then((result) => {
+					console.log(new Date(this.state.birthday + 'EDT').toISOString().slice(0, 10));
 		   			window.Materialize.toast("Sign up successful.", 3000, 'green-text');
 		   			// Api2.addClientRating({
 		   			// 	worker_id: 1,
@@ -262,6 +263,7 @@ class SignUp extends Component {
 		   			
 			   })
 				.catch((e) => {
+					console.log(new Date(this.state.birthday + 'EDT').toISOString().slice(0, 10));
 					var error = e.toString().split(' ');
 					error = parseInt(error[error.length - 1], 10);
 					console.log("MAAAAAAAAAAAAAAAAAAAAAAAAAALLLLLLLLLLLLLLLLLLI");

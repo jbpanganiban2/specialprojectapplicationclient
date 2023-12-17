@@ -33,7 +33,7 @@ class ChatWorker extends React.Component {
     // );
 
 
-    const chatWorker = new StreamChat("2q5sjjwwhm5j");
+    const chatWorker = new StreamChat("c9mjnrm3srny");
     // const userToken = chatWorker.createToken(this.props.user.username);
 
     chatWorker.setUser(

@@ -1,5 +1,10 @@
 import axios from 'axios';
 
+// const api = axios.create({baseURL: 'https://specialprojectapplication.herokuapp.com' });
+// if (process.env.REACT_APP_BACKEND_URL) {
+// Axios.defaults.baseURL = process.env.REACT_APP_BACKEND_URL;
+// }
+
 export const getSession = () => {
   return axios.get('https://specialprojectapplication.herokuapp.com/api/session');
 };
@@ -71,7 +76,7 @@ export const viewSkills = () => {
 };
 
 export const topJobOffer = () => {
-  return axios.get(`/api/topjoboffers`);
+  return axios.get(`https://specialprojectapplication.herokuapp.com/api/topjoboffers`);
 };
 
 export const topWorker = () => {

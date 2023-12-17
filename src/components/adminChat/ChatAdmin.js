@@ -48,7 +48,7 @@ class ChatAdmin extends React.Component {
     // );
 
 
-    const chatAdmin = new StreamChat("2q5sjjwwhm5j");
+    const chatAdmin = new StreamChat("c9mjnrm3srny");
     // // const userToken = chatAdmin.createToken(this.props.user.username);
 
     chatAdmin.setUser(

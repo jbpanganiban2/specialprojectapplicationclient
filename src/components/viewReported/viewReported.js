@@ -404,7 +404,7 @@ class ViewReported extends Component {
   handleChatCode = async function(username){
     console.log("CREATIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIING CHANNEL");
     console.log(username);
-    const chatClient = new StreamChat("2q5sjjwwhm5j");
+    const chatClient = new StreamChat("c9mjnrm3srny");
     chatClient.setUser(
         {
             id: this.props.user.username,
@@ -432,7 +432,7 @@ class ViewReported extends Component {
   handleChatBoth = async function(reporter, reported){
     console.log("CREATIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIING CHANNEL");
     // console.log(username);
-    const chatClient = new StreamChat("2q5sjjwwhm5j");
+    const chatClient = new StreamChat("c9mjnrm3srny");
     chatClient.setUser(
         {
             id: this.props.user.username,
