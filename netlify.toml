@@ -1,10 +1,18 @@
 [[redirects]]
- from = '/*'
- to = '/index.html'
- status = 200
-
-[[redirects]]
   force = true
   from = "/clients"
   status = 200
   to = "https://specialprojectapplication.herokuapp.com/api/clients"
+
+[[redirects]]
+  force = true
+  from = "/api/*"
+  status = 200
+  to = "https://specialprojectapplication.herokuapp.com/api/splat:"
+
+[[redirects]]
+ from = '/*'
+ to = '/index.html'
+ status = 200
+
+
