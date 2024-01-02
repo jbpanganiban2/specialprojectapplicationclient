@@ -160,6 +160,8 @@ export const updateWorkerSession = (prevData, newData) => {
 // Initial State
 const initialState = {
   /* Get Session */
+  data: [],
+  
   user: null,
   hasSession: true,
   isGettingSession: true,
