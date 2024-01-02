@@ -76,7 +76,7 @@ export const viewSkills = () => {
 };
 
 export const topJobOffer = () => {
-  return axios.get(`https://specialprojectapplication.herokuapp.com/api/topjoboffers`);
+  return axios.get(`/api/topjoboffers`);
 };
 
 export const topWorker = () => {
