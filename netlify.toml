@@ -2,13 +2,13 @@
   force = true
   from = "/clients"
   status = 200
-  to = "https://specialprojectapplication.herokuapp.com/api/clients"
+  to = "https://specialprojectapplication.herokuapp.com/clients"
 
 [[redirects]]
   force = true
   from = "/api/*"
   status = 200
-  to = "https://specialprojectapplication.herokuapp.com/api/splat:"
+  to = "https://specialprojectapplication.herokuapp.com/splat:"
 
 [[redirects]]
  from = '/*'
