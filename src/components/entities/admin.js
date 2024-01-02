@@ -2,13 +2,13 @@ import * as Api from '../api/admin';
 import { handle } from 'redux-pack';
 
 // Action Types
-const VIEW_ALL_CLIENTS = 'COURSE/VIEW_ALL_CLIENTS';
+const VIEW_ALL_CLIENT_PROFILE = 'ADMIN/VIEW_ALL_CLIENT_PROFILE';
 
 
 export const viewAllClientProfile = () => {
   return dispatch => {
     return dispatch({
-      type: GET_USERS,
+      type: VIEW_ALL_CLIENT_PROFILE,
       promise: Api.viewAllClientProfile()
     });
   };
@@ -29,7 +29,7 @@ const reducer = (state = initialState, action) => {
   const { type, payload } = action;
 
   switch (type) {
-    case VIEW_ALL_CLIENTS:
+    case VIEW_ALL_CLIENT_PROFILE:
       return handle(state, action, {
         start: prevState => ({
           ...prevState,
