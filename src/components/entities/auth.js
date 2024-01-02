@@ -160,8 +160,9 @@ export const updateWorkerSession = (prevData, newData) => {
 // Initial State
 const initialState = {
   /* Get Session */
-  data: [],
-  
+  jobData: [],
+  jobData: null,
+
   user: null,
   hasSession: true,
   isGettingSession: true,
@@ -211,7 +212,7 @@ const reducer = (state = initialState, action) => {
         }),
         success: prevState => ({
           ...prevState,
-          data: payload.data.data
+          jobData: payload.data.data
         }),
         finish: prevState => ({
           ...prevState,
