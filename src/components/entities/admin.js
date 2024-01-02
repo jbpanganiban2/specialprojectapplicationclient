@@ -19,7 +19,8 @@ export const viewAllClientProfile = () => {
 const initialState = {
   /* Get Session */
   data: [],
-  clientData: []
+  clientData: [],
+  clientData: null
 
 };
 
