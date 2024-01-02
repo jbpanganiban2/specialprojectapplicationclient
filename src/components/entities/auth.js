@@ -12,6 +12,7 @@ const PUT_USER = 'AUTH/PUT_USER';
 const UPDATE_CLIENT_SESSION = 'AUTH/UPDATE_CLIENT_SESSION';
 const UPDATE_WORKER_SESSION = 'AUTH/UPDATE_WORKER_SESSION';
 const UPDATE_SESSION = 'AUTH/UPDATE_SESSION';
+const TOP_JOB_OFFER = 'AUTH/TOP_JOB_OFFER';
 
 // Action Creators
 export const getSession = () => {
@@ -19,6 +20,16 @@ export const getSession = () => {
     return dispatch({
       type: GET_SESSION,
       promise: Api.getSession()
+    });
+  };
+};
+
+// Action Creators
+export const topJobOffer = () => {
+  return dispatch => {
+    return dispatch({
+      type: TOP_JOB_OFFER,
+      promise: Api.topJobOffer()
     });
   };
 };
@@ -190,6 +201,20 @@ const reducer = (state = initialState, action) => {
           isGettingSession: false
         })
       });
+
+    case TOP_JOB_OFFER:
+      return handle(state, action, {
+        start: prevState => ({
+          ...prevState,
+        }),
+        success: prevState => ({
+          ...prevState,
+          data: payload.data.data
+        }),
+        finish: prevState => ({
+          ...prevState,
+        })
+      });  
 
     case LOGIN:
       return handle(state, action, {
