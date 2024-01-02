@@ -6,12 +6,6 @@
 
 [[redirects]]
   force = true
-  from = "/api/topjoboffers"
-  status = 200
-  to = "https://specialprojectapplication.herokuapp.com/api/topjoboffers"  
-
-[[redirects]]
-  force = true
   from = "/api/*"
   status = 200
   to = "https://specialprojectapplication.herokuapp.com/api/splat:"
