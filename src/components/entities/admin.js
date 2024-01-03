@@ -4,6 +4,10 @@ import { handle } from 'redux-pack';
 // Action Types
 const VIEW_ALL_CLIENT_PROFILE = 'ADMIN/VIEW_ALL_CLIENT_PROFILE';
 const VIEW_ALL_WORKER_PROFILE = 'ADMIN/VIEW_ALL_WORKER_PROFILE';
+const APPROVE_WORKER = 'ADMIN/APPROVE_WORKER';
+const VIEW_UNAPPROVED = 'ADMIN/VIEW_UNAPPROVED';
+const VIEW_REPORTED = 'ADMIN/VIEW_REPORTED';
+// const ADMIN_CHAT = 'ADMIN/ADMIN_CHAT';
 
 // Action Creators
 export const viewAllClientProfile = () => {
@@ -25,12 +29,33 @@ export const viewAllWorkerProfile = () => {
 };
 
 
+export const viewUnapproved = () => {
+  return dispatch => {
+    return dispatch({
+      type: VIEW_UNAPPROVED,
+      promise: Api.viewUnapproved()
+    });
+  };
+};
+
+
+export const approveWorker = data => {
+  return dispatch => {
+    return dispatch({
+      type: APPROVE_WORKER,
+      promise: Api.approveWorker(data)
+    });
+  };
+};
+
+
 // Initial State
 const initialState = {
   /* Get Session */
   data: [],
   clientData: [],
   workerData: [],
+  unapprovedData: [],
   clientData: null
 
 };
@@ -68,6 +93,33 @@ const reducer = (state = initialState, action) => {
           ...prevState,
         })
       });
+
+    case VIEW_UNAPPROVED:
+      return handle(state, action, {
+        start: prevState => ({
+          ...prevState,
+        }),
+        success: prevState => ({
+          ...prevState,
+          unapprovedData: payload.data.data
+        }),
+        finish: prevState => ({
+          ...prevState,
+        })
+      });  
+
+    case APPROVE_WORKER:
+      return handle(state, action, {
+        start: prevState => ({
+          ...prevState,
+        }),
+        success: prevState => ({
+          ...prevState,
+        }),
+        finish: prevState => ({
+          ...prevState,
+        })
+      }); 
 
     default:
       return state;
