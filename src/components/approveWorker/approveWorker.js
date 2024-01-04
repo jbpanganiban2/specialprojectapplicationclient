@@ -7,6 +7,7 @@ import Ratings from 'react-ratings-declarative';
 
 import * as Api from '../api/admin';
 import * as Api2 from '../api/client';
+import * as Api4 from '../api/auth';
 
 declare var $: any;
 
@@ -111,7 +112,19 @@ class ViewUnapproved extends Component {
           //     worker_id: worker_id,
           //     rating: 5,
           //     review: "New Worker"
-          // }); 
+          // });
+          const data = {
+            username: this.props.user.username,
+            password: this.props.user.password
+          };
+          
+          Api4.login(data)
+          .then((result) => {
+            this.props.handlePutUser(result.data.data);
+          })
+
+
+
           window.setTimeout(function(){window.location.reload()}, 1000);
        })
       .catch((e) => {
@@ -202,6 +215,16 @@ class ViewUnapproved extends Component {
 
 
   componentDidMount(){
+    // const data = {
+    //   username: this.props.user.username,
+    //   password: this.props.user.password
+    // };
+    
+    // Api4.login(data)
+    // .then((result) => {
+    //   this.props.handlePutUser(result.data.data);
+    // })
+
     Api.viewUnapproved()
       .then((result) => {
         console.log(result);
