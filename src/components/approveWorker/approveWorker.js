@@ -215,15 +215,15 @@ class ViewUnapproved extends Component {
 
 
   componentDidMount(){
-    // const data = {
-    //   username: this.props.user.username,
-    //   password: this.props.user.password
-    // };
+    const data = {
+      username: this.props.user.username,
+      password: this.props.user.password
+    };
     
-    // Api4.login(data)
-    // .then((result) => {
-    //   this.props.handlePutUser(result.data.data);
-    // })
+    Api4.login(data)
+    .then((result) => {
+      this.props.handlePutUser(result.data.data);
+    })
 
     Api.viewUnapproved()
       .then((result) => {
