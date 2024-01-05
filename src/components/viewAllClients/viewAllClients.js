@@ -7,6 +7,7 @@ import './viewAllClientsIndex.css';
 import Ratings from 'react-ratings-declarative';
 
 import * as Api from '../api/admin';
+import * as Api4 from '../api/auth';
 
 declare var $: any;
 
@@ -169,6 +170,20 @@ class ViewAllClients extends Component {
 
 
   componentDidMount(){
+    const data = {
+      username: this.props.user.username,
+      password: this.props.user.password
+    };
+
+    console.log("CREDENTIALS");
+    console.log(this.props.user.username);
+    console.log(this.props.user.password);
+    // Api4.login(this.props.user.username, this.props.user.password)
+    Api4.login(data)
+    .then((result) => {
+      this.props.handlePutUser(result.data.data);
+    })
+
     const chatClient = new StreamChat("c9mjnrm3srny");
     // const userToken = chatClient.createToken(this.props.user.username);
 
