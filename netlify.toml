@@ -2,7 +2,7 @@
 [[redirects]]
   force = true
   from = "/api/*"
-  to = "https://specialprojectapplication.herokuapp.com/splat:" 
+  to = "https://specialprojectapplication.herokuapp.com/api/splat:" 
   status = 200
 
  [[redirects]]
