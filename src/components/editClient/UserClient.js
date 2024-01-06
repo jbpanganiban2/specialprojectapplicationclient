@@ -10,7 +10,8 @@ import * as Api2 from '../api/admin';
 import * as Api3 from '../api/worker';
 import * as Api4 from '../api/auth';
 
-const axios = require("axios");
+// const axios = require("axios");
+import axios from 'axios';
 
 declare var $: any;
 
